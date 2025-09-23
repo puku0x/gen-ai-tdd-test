@@ -1,0 +1,21 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".cspell.json": ".cspell-*",
+    "*.module.css": "$(capture).module.css.d.ts, $(capture).module.css.d.ts.map",
+    "*.module.scss": "$(capture).module.scss.d.ts, $(capture).module.scss.d.ts.map",
+    "*.js": "$(capture).spec.js, $(capture).spec.jsx, $(capture).test.js, $(capture).test.jsx",
+    "*.jsx": "$(capture).spec.jsx, $(capture).test.jsx, $(capture).stories.jsx, $(capture).module.css, $(capture).module.scss",
+    "*.ts": "$(capture).spec.ts, $(capture).spec.tsx, $(capture).test.ts, $(capture).test.tsx",
+    "*.tsx": "$(capture).spec.tsx, $(capture).test.tsx, $(capture).stories.tsx, $(capture).module.css, $(capture).module.scss",
+    ".prettierrc": ".prettierignore",
+    "README.md": "CHANGELOG.md"
+  },
+  "jestrunner.jestCommand": "npx vitest --run"
+}
