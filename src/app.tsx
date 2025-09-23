@@ -16,11 +16,12 @@ export function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>TDD Sample</h1>
       <div className="card">
         <button type="button" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          increment
         </button>
+        <p>count is {count}</p>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

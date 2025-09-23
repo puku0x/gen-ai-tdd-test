@@ -15,17 +15,13 @@ const setup = ({
 };
 
 describe('App', () => {
-  it('should increment value on click button', async () => {
+  it('should increment when increment button is clicked', async () => {
     const { user } = setup({});
 
-    expect(
-      screen.getByRole('button', { name: 'count is 0' })
-    ).toBeInTheDocument();
+    expect(screen.getByText('count is 0')).toBeInTheDocument();
 
-    await user.click(screen.getByRole('button', { name: /count is/i }));
+    await user.click(screen.getByRole('button', { name: 'increment' }));
 
-    expect(
-      screen.getByRole('button', { name: 'count is 1' })
-    ).toBeInTheDocument();
+    expect(screen.getByText('count is 1')).toBeInTheDocument();
   });
 });
