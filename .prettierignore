@@ -2,3 +2,13 @@
 
 /dist
 /coverage
+/.github/ISSUE_TEMPLATE/*.md
+/.github/PULL_REQUEST_TEMPLATE.md
+/.github/chatmodes
+/.github/copilot-instructions.md
+/.github/instructions
+/.github/prompts
+*.module.css.d.ts.map
+*.module.css.d.ts
+*.module.scss.d.ts.map
+*.module.scss.d.ts
