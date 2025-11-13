@@ -1,4 +1,13 @@
 {
+  "chat.promptFilesRecommendations": {
+    "tdd-red": true,
+    "tdd-green": true,
+    "tdd-refactor": true
+  },
+  "chat.tools.terminal.autoApprove": {
+    "/gh issue view/": true,
+    "/gh pr view/": true
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
