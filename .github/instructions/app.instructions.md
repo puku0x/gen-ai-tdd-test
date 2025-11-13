@@ -49,8 +49,6 @@ libs/**/feature-example-list/src/lib/
 - If there are multiple Presentational Components, group them in a `/components` directory
 - Place a barrel file `index.ts`
 - The barrel file should export `XxxComponent`
-- Never export `Props` from `*.component.tsx` files
-- Never export `FormValues` from `*.presenter.ts` files
 
 ```
 libs/**/feature-example-list/src/lib/components/
@@ -67,6 +65,10 @@ libs/**/feature-example-list/src/lib/components/
 ```
 
 ### Example
+
+- Prefer named exports over default exports
+- Never export `Props` from `*.component.tsx` files
+- Never export `FormValues` from `*.presenter.ts` files
 
 ```ts
 // src/example.presenter.ts
@@ -106,6 +108,8 @@ export const useExamplePresenter = ({ title, onSave }: Props) => {
 
 ```tsx
 // src/example.component.tsx
+
+import { useExamplePresenter } from './example.presenter';
 
 type Props = {
   title: string;
